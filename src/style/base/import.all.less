@@ -1,0 +1,74 @@
+@import (less) 'import.variables.less';
+@import (less) 'import.reset.less';
+
+// weui
+@import (less) '../icon/weui-font.less';
+@import (less) '../icon/weui-icon_font.less';
+
+html,
+body {
+    background-color: #F9F9F9 !important;
+}
+
+.slide-fade-enter {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.slide-fade-enter-to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+    transition: all 0.3s ease;
+}
+
+.slide-fade-leave {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-fade-leave-to {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+// 浮层
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter-to {
+    opacity: 1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.3s ease;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave-to {
+    opacity: 0;
+}
+
+.cell-arrow {
+    &:after {
+        content: ' ';
+        display: inline-block;
+        height: 14 / @rem;
+        width: 14 / @rem;
+        position: absolute;
+        top: 50%;
+        right: 44 / @rem;
+        transform: rotate(45deg) translateY(-50%);
+        transform-origin: center;
+        border-right: 2px solid @arrowColor;
+        border-top: 2px solid @arrowColor;
+    }
+}

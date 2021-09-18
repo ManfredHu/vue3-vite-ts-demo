@@ -1,0 +1,159 @@
+.reset() {
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  p,
+  blockquote,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  pre,
+  form,
+  fieldset,
+  legend,
+  button,
+  input,
+  textarea,
+  select,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 全站默认灰色字体 */
+  body {
+    background-color: #fff;
+    font: 14px/1.5 Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: @baseTextColor;
+    -webkit-text-size-adjust: 100% !important;
+  }
+
+  /* 去除表单元素的默认效果 */
+  button,
+  input,
+  textarea,
+  select {
+    font-size: 100%;
+    font-family: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+  }
+
+  /* 去除IE里select的默认外观 */
+  select::-ms-expand {
+    display: none;
+  }
+
+  select:focus,
+  select:active {
+    background-color: transparent;
+  }
+
+  input[type=text]::-ms-clear,
+  input[type=tel]::-ms-clear,
+  input[type=number]::-ms-clear {
+    display: none;
+  }
+
+  /* 禁用常用标签在选中的时候出现半透明效果或者黄色边框 */
+  body,
+  a,
+  img,
+  label,
+  button,
+  input,
+  textarea,
+  select {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  input::placeholder {
+    color: #b2b2b2; // 设置input的提示文字默认为灰色
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    font-weight: normal;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  img {
+    border: none;
+  }
+
+  a {
+    color: #007aff;
+    text-decoration: none;
+  }
+
+  a,
+  img {
+    -webkit-touch-callout: none; // 禁止长按链接与图片弹出菜单
+  }
+
+  em {
+    font-style: normal;
+  }
+
+  /* 禁用长按链接弹出效果 */
+  html,
+  body {
+    min-height: 100%;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    // 禁止长按链接与图片弹出菜单
+    -webkit-overflow-scrolling: touch;
+    // 滚动时更顺畅
+  }
+
+  /* HTML5常用标签 */
+  header,
+  nav,
+  section,
+  footer {
+    display: block;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  .cm-hide {
+    display: none !important;
+  }
+}
+
+//------------ @我是为了规范个命名呀 ------------
+.mx_reset() {
+  .reset();
+}
+
+//#我是为了规范个命名呀
