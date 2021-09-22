@@ -33,7 +33,7 @@ install: (app: App) => {
   global.$et = et
 }
 ```
- 
+
 ## 构建
 ### alias
 别名，已在`tsconfig.json`和`vite.config.js`分别设置alias`@`为`src`目录

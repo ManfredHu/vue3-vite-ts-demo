@@ -43,6 +43,7 @@ export default defineComponent({
     KeyBoard
   },
   setup() {
+    const internalInstance = getCurrentInstance()
     const data = reactive({
       typing: 0,
       phoneText: '',
@@ -66,7 +67,7 @@ export default defineComponent({
       } else if (e.type === 'finish' || e.type === 'cancel') {
         if (!data.phoneText) {
           // @ts-ignore
-          this.$showDialog({
+          internalInstance.appContext.config.globalProperties.$showDialog({
             text: ['请输入手机号'],
             showTime: 2000
           })
