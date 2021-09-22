@@ -8,9 +8,11 @@
   },
   "dependencies": {
     "axios": "^0.21.4",
+    "dayjs": "^1.10.7",
     "debug": "^4.3.2",
     "events": "^3.3.0",
     "hu-tool": "^1.2.40",
+    "js-cookie": "^3.0.1",
     "localforage": "^1.10.0",
     "pug": "^3.0.2",
     "vconsole": "^3.9.1",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",
+    "@types/js-cookie": "^2.2.7",
     "@types/node": "^16.9.2",
     "@vitejs/plugin-vue": "^1.1.4",
     "@vue/compiler-sfc": "^3.0.5",

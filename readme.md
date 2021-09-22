@@ -13,6 +13,26 @@ npm run dev
 1. Vue CLI > v4.5.0
 2. Vue Router > 4.0
 3. Vuex > 4.0
+
+### ref/toRef/toRefs/reactive
+
+- setup 
+  - setup的执行时机在beforeCreated前执行
+  - setup参数为props和context
+- [Vue3中ref、toRef、toRefs的区别](https://juejin.cn/post/6954789258607460359)
+  - ref和reactive区别，普通类型和引用类型要使用哪个
+  - toRef 是对定义的响应对象的某个属性进行引用，如`toRef(person, 'name')`
+  - toRefs 把reactive的对象解构同时保留响应式
+### 插件如何挂载？
+
+api换了，但是差不多原理
+```js
+install: (app: App) => {
+  // 全局挂载，可以这么用 this.$axios……
+  const global = app.config.globalProperties
+  global.$et = et
+}
+```
  
 ## 构建
 ### alias

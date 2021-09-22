@@ -4,16 +4,22 @@
     <header class="components-list-header">组件列表</header>
     <ul>
       <li>
-        <router-link class="components-list-text" to="/dialog">提示浮层</router-link>
+        <router-link class="components-list-text" to="/demo/DialogDemo">提示浮层</router-link>
       </li>
       <li>
+        <router-link class="components-list-text" to="/demo/RequestDemo">请求</router-link>
+      </li>
+      <li>
+        <router-link class="components-list-text" to="/demo/HutoolDemo">hutoolDemo</router-link>
+      </li>
+      <li>
+        <router-link class="components-list-text" to="/demo/KeyBoard">虚拟键盘</router-link>
+      </li>
+      <!-- <li>
         <router-link class="components-list-text" to="/confirm">确认框</router-link>
       </li>
       <li>
         <router-link class="components-list-text" to="/totop">返回顶部</router-link>
-      </li>
-      <li>
-        <router-link class="components-list-text" to="/keyboard">虚拟键盘</router-link>
       </li>
       <li>
         <router-link class="components-list-text" to="/distpicker">地区级联选择</router-link>
@@ -26,7 +32,7 @@
       </li>
       <li>
         <router-link class="components-list-text" to="/idcard">身份证</router-link>
-      </li>
+      </li> -->
     </ul>
   </div>
 </template>
