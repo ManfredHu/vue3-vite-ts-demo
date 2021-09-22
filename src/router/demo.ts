@@ -34,5 +34,11 @@ export default [
       pageId: 26
     }
   },
-  
+  {
+    path: '/demo/VuexDemo',
+    component: () => import(/* webpackChunkName: "VuexDemo" */ '@/views/demo/VuexDemo.vue'),
+    meta: {
+      pageId: 27
+    }
+  },  
 ]

@@ -1,4 +1,4 @@
-# vite2+vue3+less
+# vite2+vue3+less+ts
 - 适配移动端
 
 ## 开始
@@ -34,6 +34,12 @@ install: (app: App) => {
 }
 ```
 
+### 指令
+api换了
+bind -> mounted
+unbind -> unmounted
+
+### 
 ## 构建
 ### alias
 别名，已在`tsconfig.json`和`vite.config.js`分别设置alias`@`为`src`目录

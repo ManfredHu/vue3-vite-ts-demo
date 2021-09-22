@@ -15,6 +15,9 @@
       <li>
         <router-link class="components-list-text" to="/demo/KeyBoard">虚拟键盘</router-link>
       </li>
+      <li>
+        <router-link class="components-list-text" to="/demo/VuexDemo">Vuex Demo</router-link>
+      </li>
       <!-- <li>
         <router-link class="components-list-text" to="/confirm">确认框</router-link>
       </li>
