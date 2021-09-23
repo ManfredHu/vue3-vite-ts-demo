@@ -18,6 +18,9 @@
       <li>
         <router-link class="components-list-text" to="/demo/VuexDemo">Vuex Demo</router-link>
       </li>
+      <li>
+        <router-link class="components-list-text" to="/demo/TailwindcssDemo">Tailwindcss Demo</router-link>
+      </li>
       <!-- <li>
         <router-link class="components-list-text" to="/confirm">确认框</router-link>
       </li>

@@ -21,6 +21,7 @@ module.exports = {
       rootValue: 37.5, // 按照1rem = 37.5px转化，则750宽度为20rem
       propList: ['*'],
       unitPrecision: 5
-    }
+    },
+    tailwindcss: {}
   }
 }

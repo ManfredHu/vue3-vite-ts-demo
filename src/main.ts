@@ -4,6 +4,10 @@ import router from './router'
 import { store } from './store'
 import basePlugin from './plugins'
 import GlobalDialog from './plugins/Dialog'
+
+// tailwindcss
+import './style/index.css'
+
 const app = createApp(App)
 
 // 写法变了

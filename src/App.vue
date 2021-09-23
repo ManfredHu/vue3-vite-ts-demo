@@ -13,8 +13,8 @@ export default defineComponent({
 </script>
 
 <style lang="less">
-@import (less) '../src/style/base/import.all.less';
-.mx_reset();
+// @import (less) '../src/style/base/import.all.less';
+// .mx_reset();
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

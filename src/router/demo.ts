@@ -40,5 +40,12 @@ export default [
     meta: {
       pageId: 27
     }
-  },  
+  },
+  {
+    path: '/demo/TailwindcssDemo',
+    component: () => import(/* webpackChunkName: "TailwindcssDemo" */ '@/views/demo/TailwindcssDemo.vue'),
+    meta: {
+      pageId: 28
+    }
+  }
 ]
