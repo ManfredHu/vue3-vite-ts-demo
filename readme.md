@@ -65,6 +65,6 @@ unbind -> unmounted
 `postcss-pxtorem`会默认16px为1rem，所以`rootValue: 16`，这里需要修改为`rootValue: 37.5`，即**一屏幕750px宽度默认为20rem**，以此求1rem值。与[阿里的flexible](https://github.com/amfe/lib-flexible)不一样，flexible默认375宽，且切割为10份。但是一般sketch稿子规定750宽
 
 ### [tailwindcss](https://www.tailwindcss.cn/)
-直接上了，class决定样式，类名自行查阅文档。
+直接上了，class决定样式，类名自行查阅文档。下面插件要装，否则会样式会告警
 
-
+配合vscode插件: https://marketplace.visualstudio.com/items?itemName=csstools.postcss
