@@ -47,5 +47,12 @@ export default [
     meta: {
       pageId: 28
     }
+  },
+  {
+    path: '/demo/ProvideInjectDemo',
+    component: () => import(/* webpackChunkName: "ProvideInjectDemo" */ '@/views/demo/ProvideInjectDemo.vue'),
+    meta: {
+      pageId: 29
+    }
   }
 ]

@@ -10,16 +10,19 @@
         <router-link class="components-list-text" to="/demo/RequestDemo">请求</router-link>
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/HutoolDemo">hutoolDemo</router-link>
+        <router-link class="components-list-text" to="/demo/HutoolDemo">HutoolDemo</router-link>
       </li>
       <li>
         <router-link class="components-list-text" to="/demo/KeyBoard">虚拟键盘</router-link>
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/VuexDemo">Vuex Demo</router-link>
+        <router-link class="components-list-text" to="/demo/VuexDemo">VuexDemo</router-link>
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/TailwindcssDemo">Tailwindcss Demo</router-link>
+        <router-link class="components-list-text" to="/demo/TailwindcssDemo">TailwindcssDemo</router-link>
+      </li>
+      <li>
+        <router-link class="components-list-text" to="/demo/ProvideInjectDemo">ProvideInjectDemo</router-link>
       </li>
       <!-- <li>
         <router-link class="components-list-text" to="/confirm">确认框</router-link>
