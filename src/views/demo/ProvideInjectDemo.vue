@@ -1,5 +1,7 @@
 <template>
-  <div class="text-blue-500">这个页面{{myName}}是InjectComponentsA嵌套InjectComponentsB</div>
+  <div class="text-blue-500">
+    这个页面{{ myName }}是InjectComponentsA嵌套InjectComponentsB
+  </div>
   <div class="requestDemo">
     <InjectComponentsA></InjectComponentsA>
   </div>
@@ -26,8 +28,7 @@ export default defineComponent({
       myName
     }
   },
-  async mounted() {
-  }
+  async mounted() {}
 })
 </script>
 

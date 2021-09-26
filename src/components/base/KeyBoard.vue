@@ -27,11 +27,7 @@
         <div class="btn" @click.prevent="typeText(7)">7</div>
         <div class="btn" @click.prevent="typeText(8)">8</div>
         <div class="btn" @click.prevent="typeText(9)">9</div>
-        <div
-          class="btn"
-          @click.prevent="typeText('X')"
-          v-if="isID === 1"
-        >
+        <div class="btn" @click.prevent="typeText('X')" v-if="isID === 1">
           X
         </div>
         <div class="spaceBtn" v-else-if="isID === 2"></div>
@@ -91,40 +87,45 @@ export default defineComponent({
     }
 
     const typeText = (num: number | string) => {
-      props.keyPress && props.keyPress({
-        type: 'enter',
-        value: num
-      })
+      props.keyPress &&
+        props.keyPress({
+          type: 'enter',
+          value: num
+        })
     }
     const deleteText = () => {
-      props.keyPress && props.keyPress({
-        type: 'delete',
-        value: undefined
-      })
+      props.keyPress &&
+        props.keyPress({
+          type: 'delete',
+          value: undefined
+        })
     }
     const clearText = () => {
-      props.keyPress && props.keyPress({
-        type: 'clear',
-        value: undefined
-      })
+      props.keyPress &&
+        props.keyPress({
+          type: 'clear',
+          value: undefined
+        })
     }
     const finishEdit = () => {
       emit('typing', 0)
-      props.keyPress && props.keyPress({
-        type: 'finish',
-        value: undefined
-      })
+      props.keyPress &&
+        props.keyPress({
+          type: 'finish',
+          value: undefined
+        })
     }
     const triggerBlur = () => {
       emit('typing', 0)
-      props.keyPress && props.keyPress({
-        type: 'cancel',
-        value: undefined
-      })
+      props.keyPress &&
+        props.keyPress({
+          type: 'cancel',
+          value: undefined
+        })
     }
-    const onKeyUp= (e: {key: string}) => {
+    const onKeyUp = (e: { key: string }) => {
       const key = parseInt(e.key)
-      if (key >= 0 && key < 10 ) {
+      if (key >= 0 && key < 10) {
         typeText(key)
       } else if (e.key === 'x') {
         typeText(e.key.toUpperCase())

@@ -1,6 +1,4 @@
-import {
-  TypeCheck
-} from 'hu-tool'
+import { TypeCheck } from 'hu-tool'
 
 // 长按时间，与小程序长按时间同步
 // https: //developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
@@ -16,10 +14,14 @@ function isLongpress(self: any) {
   }
   const longpressObj = self.longpressObj
   // 这里的逻辑是为了区分滑动操作
-  const tapX = !TypeCheck.isNumber(longpressObj.distanceX) ||
-    (Math.abs(longpressObj.distanceX) < distanceStandard && (longpressObj.clientX || longpressObj.pageX))
-  const tapY = !TypeCheck.isNumber(longpressObj.distanceY) ||
-    (Math.abs(longpressObj.distanceY) < distanceStandard && (longpressObj.clientY || longpressObj.pageY))
+  const tapX =
+    !TypeCheck.isNumber(longpressObj.distanceX) ||
+    (Math.abs(longpressObj.distanceX) < distanceStandard &&
+      (longpressObj.clientX || longpressObj.pageX))
+  const tapY =
+    !TypeCheck.isNumber(longpressObj.distanceY) ||
+    (Math.abs(longpressObj.distanceY) < distanceStandard &&
+      (longpressObj.clientY || longpressObj.pageY))
   const result = longpressObj.timeGap >= longTapDelay && tapX && tapY
   return result
 }
@@ -32,9 +34,7 @@ function isLongpress(self: any) {
  */
 function touchstart(e: any, self: any) {
   const touches = e.touches[0]
-  const {
-    longpressObj
-  } = self
+  const { longpressObj } = self
   longpressObj.pageX = touches.pageX
   longpressObj.pageY = touches.pageY
   longpressObj.clientX = touches.clientX
@@ -55,16 +55,17 @@ function touchend(e: any, self: any, modifiers: any) {
   // http://www.cnblogs.com/yexiaochai/p/3462657.html
   // touchend时，touches与targetTouches信息会被删除，changedTouches保存的最后一次的信息，最好用于计算手指信息
   const touches = e.changedTouches[0]
-  const {
-    longpressObj
-  } = self
+  const { longpressObj } = self
   longpressObj.timeGap = new Date().getTime() - longpressObj.touchStartTime
   longpressObj.distanceX = longpressObj.pageX - touches.pageX
   longpressObj.distanceY = longpressObj.pageY - touches.pageY
   longpressObj.timer && clearTimeout(longpressObj.timer)
 }
 
-function _callback(el: HTMLElement & { longpressObj: any, href: string}, binding: any) {
+function _callback(
+  el: HTMLElement & { longpressObj: any; href: string },
+  binding: any
+) {
   el.longpressObj = {}
   el.longpressObj.handler = (e: Event) => {
     // This directive.handler
@@ -87,7 +88,10 @@ function _callback(el: HTMLElement & { longpressObj: any, href: string}, binding
 }
 
 export default {
-  mounted: (el: HTMLElement & { longpressObj: any, href: string}, binding: any) => {
+  mounted: (
+    el: HTMLElement & { longpressObj: any; href: string },
+    binding: any
+  ) => {
     _callback.call(this, el, binding)
     el.addEventListener(
       'touchstart',
@@ -124,7 +128,7 @@ export default {
       false
     )
   },
-  unmounted: (el: HTMLElement & { longpressObj: any, href: string}) => {
+  unmounted: (el: HTMLElement & { longpressObj: any; href: string }) => {
     el.longpressObj.handler = null
     el.longpressObj.timer = null
     el.longpressObj = null

@@ -1,7 +1,5 @@
 <template>
-  <div class="dialogDemo">
-    Dialog Demo
-  </div>
+  <div class="dialogDemo">Dialog Demo</div>
 </template>
 
 <script lang="ts">

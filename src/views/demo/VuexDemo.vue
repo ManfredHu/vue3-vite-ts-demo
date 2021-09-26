@@ -1,14 +1,14 @@
 <template>
   <div class="VuexDemo">
-    <div @click="goback">后退 {{count}}</div>
-    <div> {{addOne}}</div>
+    <div @click="goback">后退 {{ count }}</div>
+    <div>{{ addOne }}</div>
   </div>
 </template>
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
 import { useRouter } from 'vue-router'
-import { useStore } from "vuex";
+import { useStore } from 'vuex'
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
 export default defineComponent({
@@ -29,7 +29,7 @@ export default defineComponent({
 
     return {
       time,
-      goback,
+      goback
     }
   },
   computed: {
@@ -43,12 +43,8 @@ export default defineComponent({
     })
   },
   methods: {
-    ...mapMutations([
-      'countAddNumber'
-    ]),
-    ...mapActions([
-      'getDataAndCountAddOne'
-    ])
+    ...mapMutations(['countAddNumber']),
+    ...mapActions(['getDataAndCountAddOne'])
   },
   async mounted() {
     // +10

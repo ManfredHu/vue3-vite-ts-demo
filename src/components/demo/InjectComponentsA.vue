@@ -14,11 +14,9 @@ export default defineComponent({
     InjectComponentsB
   },
   setup() {
-    return {
-    }
+    return {}
   },
-  async mounted() {
-  }
+  async mounted() {}
 })
 </script>
 

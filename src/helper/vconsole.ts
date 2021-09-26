@@ -1,4 +1,4 @@
-export default () => {
+export default (): void => {
   /**
    * local file method, using dynamic imports, see https://webpack.docschina.org/guides/code-splitting
    */
@@ -9,7 +9,7 @@ export default () => {
   )
     return
   // using webapck split chunk and rename async.vconsole.[hashName].js
-  import(/* webpackChunkName: "vconsole" */ 'vconsole').then((VConsole) => {
+  import(/* webpackChunkName: "vconsole" */ 'vconsole').then(VConsole => {
     if (typeof VConsole.default === 'function') {
       new VConsole.default()
     }

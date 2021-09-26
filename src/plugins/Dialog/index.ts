@@ -1,15 +1,6 @@
 import index from './index.vue'
-import {
-  App,
-  Plugin
-} from "vue";
-import {
-  createApp,
-  createVNode,
-  render,
-  defineComponent
-} from 'vue'
-
+import { App, Plugin } from 'vue'
+import { createApp, createVNode, render, defineComponent } from 'vue'
 
 let $inst: any = null
 

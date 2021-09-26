@@ -1,7 +1,5 @@
 <template>
-  <div>
-    This is {{name}}
-  </div>
+  <div>This is {{ name }}</div>
 </template>
 
 <script lang="ts">
@@ -19,14 +17,13 @@ export default defineComponent({
       getContent
     }
   },
-  
+
   created() {
     console.log(this.content)
     // @ts-ignore
     console.log(this.getContent())
   },
-  async mounted() {
-  }
+  async mounted() {}
 })
 </script>
 

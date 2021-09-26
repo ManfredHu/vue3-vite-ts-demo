@@ -25,11 +25,11 @@ export default {
     const data = reactive({
       isShow: false,
       showTime: 2000,
-      showMask: false,
+      showMask: false
     })
 
     // 显示
-    const show = ({showTime = 2000, showMask = false}) => {
+    const show = ({ showTime = 2000, showMask = false }) => {
       data.isShow = true
       data.showMask = showMask
       clearTimeout(timer)

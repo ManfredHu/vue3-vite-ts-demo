@@ -1,6 +1,6 @@
 <template>
   <div class="requestDemo">
-    {{requestText}}
+    {{ requestText }}
   </div>
 </template>
 
@@ -17,9 +17,11 @@ export default defineComponent({
   async mounted() {
     try {
       // @ts-ignore
-      const rst:any = await this.$axios(`https://registry.npm.taobao.org/egg/latest`)
+      const rst: any = await this.$axios(
+        `https://registry.npm.taobao.org/egg/latest`
+      )
       this.requestText = rst.repository.url
-    } catch(err){
+    } catch (err) {
       console.error(err)
     }
   }

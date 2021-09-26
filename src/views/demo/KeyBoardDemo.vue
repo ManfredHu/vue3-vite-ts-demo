@@ -32,7 +32,14 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent, reactive, toRefs, computed, getCurrentInstance} from 'vue'
+import {
+  ref,
+  defineComponent,
+  reactive,
+  toRefs,
+  computed,
+  getCurrentInstance
+} from 'vue'
 
 import KeyBoard from '@/components/base/KeyBoard.vue'
 import { Phone } from 'hu-tool'
@@ -54,7 +61,10 @@ export default defineComponent({
       data.typing = 1
     }
 
-    const onKeyboardPress = (e: {type: string, value: undefined|number|string}) => {
+    const onKeyboardPress = (e: {
+      type: string
+      value: undefined | number | string
+    }) => {
       if (e.type === 'enter') {
         if (Phone.getPurePhone(data.phoneText).length < 11) {
           data.phoneText += e.value

@@ -9,8 +9,7 @@ const log = debug('worker:rem')
  * 目的是为了方便rem做自适应布局
  */
 
-
-function rem(logicWidth = 750) {
+function rem(logicWidth = 750): void {
   const win = window
   const doc = document
   if (!win || !doc) {
@@ -18,7 +17,8 @@ function rem(logicWidth = 750) {
   }
   const docEl = doc.documentElement
   // 判断是横竖屏
-  const resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'
+  const resizeEvt =
+    'orientationchange' in window ? 'orientationchange' : 'resize'
 
   function recalc() {
     const clientWidth = docEl.clientWidth
@@ -26,7 +26,7 @@ function rem(logicWidth = 750) {
     // 按照比例缩放
     const salepro = clientWidth / logicWidth
     const baseSize = 37.5 // 与postcss.config.js的rootValue一致
-    docEl.style.fontSize = (baseSize * Math.min(salepro, 2)) + 'px'
+    docEl.style.fontSize = baseSize * Math.min(salepro, 2) + 'px'
     log('set <html> font-size', docEl.style.fontSize)
   }
 

@@ -1,5 +1,5 @@
 // 汇总插件
-import { App, Plugin } from "vue";
+import { App, Plugin } from 'vue'
 import localforage from 'localforage'
 import { is, phone, ua, url } from 'hu-tool'
 import rem from '@/helper/rem'

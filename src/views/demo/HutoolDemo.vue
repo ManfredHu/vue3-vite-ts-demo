@@ -1,7 +1,5 @@
 <template>
-  <div class="hutoolDemo">
-    now time: {{time}}
-  </div>
+  <div class="hutoolDemo">now time: {{ time }}</div>
 </template>
 
 <script lang="ts">
@@ -16,7 +14,7 @@ export default defineComponent({
   },
   async mounted() {
     // @ts-ignore
-    console.log(this.$is.isArray([1,2,3]))
+    console.log(this.$is.isArray([1, 2, 3]))
     // @ts-ignore
     this.time = this.$time().format('YYYY-MM-DD HH:mm:ss')
   }

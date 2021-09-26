@@ -4,25 +4,39 @@
     <header class="components-list-header">组件列表</header>
     <ul>
       <li>
-        <router-link class="components-list-text" to="/demo/DialogDemo">提示浮层</router-link>
+        <router-link class="components-list-text" to="/demo/DialogDemo"
+          >提示浮层</router-link
+        >
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/RequestDemo">请求</router-link>
+        <router-link class="components-list-text" to="/demo/RequestDemo"
+          >请求</router-link
+        >
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/HutoolDemo">HutoolDemo</router-link>
+        <router-link class="components-list-text" to="/demo/HutoolDemo"
+          >HutoolDemo</router-link
+        >
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/KeyBoard">虚拟键盘</router-link>
+        <router-link class="components-list-text" to="/demo/KeyBoard"
+          >虚拟键盘</router-link
+        >
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/VuexDemo">VuexDemo</router-link>
+        <router-link class="components-list-text" to="/demo/VuexDemo"
+          >VuexDemo</router-link
+        >
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/TailwindcssDemo">TailwindcssDemo</router-link>
+        <router-link class="components-list-text" to="/demo/TailwindcssDemo"
+          >TailwindcssDemo</router-link
+        >
       </li>
       <li>
-        <router-link class="components-list-text" to="/demo/ProvideInjectDemo">ProvideInjectDemo</router-link>
+        <router-link class="components-list-text" to="/demo/ProvideInjectDemo"
+          >ProvideInjectDemo</router-link
+        >
       </li>
       <!-- <li>
         <router-link class="components-list-text" to="/confirm">确认框</router-link>
@@ -75,8 +89,8 @@ export default {
   }
 }
 // rem测试
-.tips{
-  height: 1PX; // 这里就是1px，可以忽略postcss转化
+.tips {
+  height: 1px; // 这里就是1px，可以忽略postcss转化
   width: 375px;
   background: red;
 }

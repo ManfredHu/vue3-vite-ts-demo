@@ -20,17 +20,15 @@
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
 import { useRouter } from 'vue-router'
-import { useStore } from "vuex";
+import { useStore } from 'vuex'
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
 export default defineComponent({
   name: 'tailwindcss',
   setup() {
-    return {
-    }
+    return {}
   }
 })
 </script>
 
-<style scoped lang="less">
-</style>
+<style scoped lang="less"></style>
