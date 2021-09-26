@@ -7,6 +7,13 @@
     "serve": "vite preview",
     "format": "prettier --config .prettierrc 'src/*/**' --write"
   },
+  "author": {
+    "name": "ManfredHu",
+    "email": "manfredhufe@gmail.com"
+  },
+  "repository": {
+    "url": "git@github.com:ManfredHu/vue3-vite-ts-demo.git"
+  },
   "dependencies": {
     "axios": "^0.21.4",
     "dayjs": "^1.10.7",
