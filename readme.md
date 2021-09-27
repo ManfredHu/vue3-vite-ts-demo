@@ -68,3 +68,6 @@ unbind -> unmounted
 直接上了，class决定样式，类名自行查阅文档。下面插件要装，否则会样式会告警
 
 配合vscode插件: https://marketplace.visualstudio.com/items?itemName=csstools.postcss
+
+### prettier+ESlint
+代码格式化，两大神器
